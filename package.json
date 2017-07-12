@@ -4,10 +4,7 @@
   "description": "Convenience wrapper for `got` to interact with the HannoverJS API",
   "repository": "hannoverjs/hannoverjs",
   "license": "MIT",
-  "author": {
-    "name": "Tim Cheung",
-    "email": "tim@cheung.io"
-  },
+  "author": "Tim Cheung <tim@cheung.io>",
   "scripts": {
     "precommit": "lint-staged",
     "lint": "xo",
