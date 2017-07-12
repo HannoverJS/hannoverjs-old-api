@@ -1,6 +1,6 @@
 {
   "name": "hannoverjs",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Convenience wrapper for `got` to interact with the HannoverJS API",
   "repository": "hannoverjs/hannoverjs",
   "license": "MIT",
