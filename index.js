@@ -19,7 +19,7 @@ function hannoverjs(path, opts) {
 
   gotOpts.headers = Object.assign(
     {
-      'user-agent': 'https://github.com/hannoverjs/hannoverjs'
+      'User-Agent': 'https://github.com/hannoverjs/hannoverjs'
     },
     gotOpts.headers
   )
@@ -30,8 +30,8 @@ function hannoverjs(path, opts) {
 }
 
 hannoverjs.ENDPOINT = ENDPOINT
-hannoverjs.getMeetups = opts => hannoverjs('/meetups', opts)
+hannoverjs.getEvents = opts => hannoverjs('/events', opts)
 hannoverjs.getTalks = opts => hannoverjs('/talks', opts)
-hannoverjs.getTeam = opts => hannoverjs('/team', opts)
+hannoverjs.getOrganizers = opts => hannoverjs('/organizers', opts)
 
 module.exports = hannoverjs

@@ -15,15 +15,11 @@ npm install hannoverjs
 ```js
 const hannoverjs = require('hannoverjs')
 
-hannoverjs('/', { json: false }).then(res => {
+hannoverjs('/').then(res => {
   console.log(res.body)
 })
 
-hannoverjs('/meetups').then(res => {
-  console.log(res.body)
-})
-
-hannoverjs.getTalks().then(res => {
+hannoverjs.getEvents().then(res => {
   console.log(res.body)
 })
 ```
@@ -59,14 +55,14 @@ Type: `string`
 
 Custom path which will be appended to `options.endpoint`. Must start with `/`.
 
-### `hannoverjs.getMeetups([options])`
+### `hannoverjs.getEvents([options])`
 
-Returns the response from `/meetups`.
+Returns the response from `/events`.
 
 ### `hannoverjs.getTalks([options])`
 
 Returns the response from `/talks`.
 
-### `hannoverjs.getTeam([options])`
+### `hannoverjs.getOrganizers([options])`
 
-Returns the response from `/team`.
+Returns the response from `/organizers`.
