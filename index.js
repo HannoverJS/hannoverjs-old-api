@@ -1,6 +1,6 @@
 const got = require('got')
 
-const ENDPOINT = 'https://hannoverjs-api.now.sh'
+const ENDPOINT = 'https://api.hannoverjs.de'
 
 function hannoverjs(path, opts) {
   if (typeof path !== 'string') {
