@@ -1,6 +1,6 @@
 # hannoverjs
 
-[![Build Status](https://travis-ci.org/HannoverJS/hannoverjs.svg?branch=master)](https://travis-ci.org/HannoverJS/hannoverjs) [![Codecov](https://codecov.io/gh/hannoverjs/hannoverjs/branch/master/graph/badge.svg)](https://codecov.io/gh/hannoverjs/hannoverjs) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![Build Status](https://travis-ci.org/HannoverJS/hannoverjs.svg?branch=master)](https://travis-ci.org/HannoverJS/hannoverjs) [![npm](https://img.shields.io/npm/v/hannoverjs.svg)](https://www.npmjs.com/package/hannoverjs) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 > Convenience wrapper for [`got`](https://github.com/sindresorhus/got) to interact with the [HannoverJS API](https://github.com/HannoverJS/hannoverjs-api)
 

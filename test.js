@@ -1,6 +1,6 @@
 import test from 'ava'
 import nock from 'nock'
-import hannoverjs, { ENDPOINT, getEvents, getTalks, getOrganizers } from './'
+import hannoverjs, { ENDPOINT, getEvents, getTalks, getOrganizers } from '.'
 
 const foo = 'bar'
 const body = { foo }

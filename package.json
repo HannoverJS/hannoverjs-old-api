@@ -8,10 +8,9 @@
   "scripts": {
     "precommit": "lint-staged",
     "lint": "xo",
-    "test": "npm run lint && nyc ava",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "prettier": "prettier --single-quote --no-semi --write",
-    "prettify": "npm run prettier -- *.js"
+    "test": "ava",
+    "format": "prettier --write *.js",
+    "format:check": "prettier --list-different *.js"
   },
   "files": [
     "index.js"
@@ -24,26 +23,28 @@
     "got"
   ],
   "dependencies": {
-    "got": "^7.1.0"
+    "got": "^8.3.0"
   },
   "devDependencies": {
-    "ava": "*",
-    "codecov": "^2.2.0",
-    "eslint-config-prettier": "^2.3.0",
+    "ava": "^1.0.0-beta.3",
     "husky": "^0.14.3",
-    "lint-staged": "^4.0.1",
-    "nock": "^9.0.2",
-    "nyc": "^11.0.3",
-    "prettier": "^1.5.2",
-    "xo": "*"
+    "lint-staged": "^7.0.4",
+    "nock": "^9.2.5",
+    "prettier": "^1.12.0",
+    "xo": "^0.20.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "bracketSpacing": true
   },
   "xo": {
-    "extends": "prettier"
+    "extends": "prettier",
+    "space": true
   },
   "lint-staged": {
     "*.js": [
-      "npm run lint",
-      "npm run prettier",
+      "prettier --write",
       "git add"
     ]
   }
